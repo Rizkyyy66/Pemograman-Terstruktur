@@ -11,18 +11,24 @@ int main() {
 
     int selisih = tinggi - berat;
 
-    if (selisih > 120) {
-        cout << "Kegemukan" << endl;
-    }
-    else if (selisih >= 111 && selisih <= 120) {
-        cout << "Ideal" << endl;
-    }
-    else if (selisih >= 100 && selisih <= 110) {
-        cout << "Kurus" << endl;
+    if (tinggi == 0 && berat == 0) {
+        cout << "Tidak Dapat Di Hitung" << endl;
     }
     else {
-        cout << "Sangat Kurus" << endl;
+        if (selisih > 120) {
+            cout << "Kegemukan" << endl;
     }
+        else if (selisih >= 111 && selisih <= 120) {
+            cout << "Ideal" << endl;
+    }
+        else if (selisih >= 100 && selisih <= 110) {
+            cout << "Kurus" << endl;
+    }
+        else {
+            cout << "Sangat Kurus" << endl;
+    }
+    }
+
 
     return 0;
 }
